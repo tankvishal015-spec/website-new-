@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Place For You ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html{
+scroll-behavior:smooth;
+}
+body{
+font-family:'Quicksand',sans-serif;
+background:linear-gradient(180deg,#fff7f8,#fdf6ff,#f5f9ff);
+overflow-x:hidden;
+color:#444;
+}
+.floating{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+pointer-events:none;
+z-index:1;
+}
+.heart{
+position:absolute;
+font-size:20px;
+opacity:.4;
+animation:float 12s linear infinite;
+}
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+20%{
+opacity:.5;
+}
+100%{
+transform:translateY(-100px);
+opacity:0;
+}
+}
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:60px 20px;
+text-align:center;
+position:relative;
+z-index:2;
+}
+.hero h1{
+font-family:'Dancing Script',cursive;
+font-size:4rem;
+color:#ff6fa5;
+margin-bottom:20px;
+}
+.hero p{
+max-width:700px;
+font-size:1.2rem;
+line-height:1.8;
+}
+.btn{
+margin-top:30px;
+padding:14px 30px;
+border:none;
+border-radius:50px;
+background:#ff8db7;
+color:white;
+font-size:1rem;
+cursor:pointer;
+transition:.3s;
+text-decoration:none;
+}
+.btn:hover{
+transform:scale(1.08);
+background:#ff6fa5;
+}
+.card-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+margin-top:40px;
+}
+.card{
+background:white;
+padding:25px;
+width:280px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.4s;
+}
+.card:hover{
+transform:translateY(-10px);
+}
+.card h3{
+margin-bottom:10px;
+color:#ff6fa5;
+}
+.love-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+width:90%;
+margin-top:40px;
+}
+.love-item{
+background:white;
+padding:20px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+.special-box{
+background:white;
+padding:30px;
+border-radius:25px;
+max-width:800px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+line-height:2;
+}
+.open-btn{
+padding:12px 25px;
+margin:10px;
+border:none;
+border-radius:50px;
+background:#cfa9ff;
+color:white;
+cursor:pointer;
+font-size:1rem;
+}
+.popup{
+display:none;
+margin-top:20px;
+background:white;
+padding:25px;
+border-radius:20px;
+max-width:500px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+.final h2{
+font-family:'Dancing Script',cursive;
+font-size:3.5rem;
+color:#ff6fa5;
+margin-bottom:20px;
+}
+footer{
+padding:30px;
+text-align:center;
+color:#777;
+}
+.hug-btn{
+padding:15px 35px;
+background:#ff6fa5;
+border:none;
+border-radius:50px;
+color:white;
+font-size:1rem;
+cursor:pointer;
+margin-top:20px;
+}
+#hugMessage{
+display:none;
+margin-top:20px;
+font-size:1.2rem;
+color:#ff6fa5;
+font-weight:bold;
+animation:fadeIn .8s ease;
+}
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(10px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+</style>
+</head>
+<body>
+<div class="floating" id="floating"></div>
+<section class="hero">
+<h1>Hi Beautiful ❤️</h1>
+<p>
+I know the last few days haven't been easy.
+I know I haven't always been the boyfriend you needed me to be.
+Before anything else, I want you to know that you are loved,
+you are important, and you mean more to me than I probably say enough.
+</p>
+<a href="#apology" class="btn">Take a Little Walk Through My Heart ✨</a>
+</section>
+<section id="apology">
+<h2>💌 I'm Sorry</h2>
+<div class="special-box">
+I’m sorry for the moments when I made things harder instead of easier.
+I know you're carrying a lot right now and I wish I had been better at understanding that.
+You deserve patience.
+You deserve comfort.
+You deserve someone who listens with their whole heart.
+I can't change the mistakes I've made,
+but I promise to learn from them and become better for us.
+</div>
+</section>
+<section>
+<h2>📸 Our Memories</h2>
+<div class="card-container">
+<div class="card">
+<h3>🌙 Late Night Calls</h3>
+<p>Those nights that somehow became mornings because talking to you never felt like enough.</p>
+</div>
+<div class="card">
+<h3>😂 Our Funniest Moment</h3>
+<p>like you saying that u wanna throw coffee on me one first date.</p>
+</div>
+<div class="card">
+<h3>🍕 Favorite Date</h3>
+<p>pbviously our first date cant forget that never.</p>
+</div>
+<div class="card">
+<h3>❤️ First Special Moment</h3>
+<p> The day i expressed my feeling to youu.</p>
+</div>
+</div>
+</section>
+<section>
+<h2>🌷 Things I Love About You</h2>
+<div class="love-grid">
+<div class="love-item">Your Smile 😊</div>
+<div class="love-item">Your Kindness 💕</div>
+<div class="love-item">Your Strength 🌸</div>
+<div class="love-item">Your Laugh ✨</div>
+<div class="love-item">The Way You Care ❤️</div>
+<div class="love-item">The Way You Make Ordinary Days Special 🌈</div>
+</div>
+</section>
+<section>
+<h2>🌈 For The Days That Feel Heavy</h2>
+<div class="special-box">
+I know life has been unfair lately.
+I know some days feel heavier than others.
+You don't have to carry everything alone.
+You don't always have to be strong.
+Even when you're tired, overwhelmed, sad, frustrated, or unsure...
+I'm here.
+Not because I have all the answers.
+But because I care about you.
+</div>
+</section>
+<section>
+<h2>🎁 Open When...</h2>
+<button class="open-btn" onclick="showMessage('sad')">Open When You're Sad</button>
+<button class="open-btn" onclick="showMessage('miss')">Open When You Miss Me</button>
+<button class="open-btn" onclick="showMessage('angry')">Open When You're Angry At Me</button>
+<div class="popup" id="popup"></div>
+</section>
+<section class="final">
+<h2>Thank You ❤️</h2>
+<p style="max-width:700px;line-height:2;">
+No matter how many fights we have,
+no matter how difficult some days become,
+choosing you will always be one of my favorite decisions.
+Thank you for your patience.
+Thank you for your love.
+And thank you for being you.
+</p>
+<button class="hug-btn" onclick="hug()">🤗 Press When You Need A Hug</button>
+<div id="hugMessage">
+Sending the biggest virtual hug ever 🤗❤️
+</div>
+</section>
+<footer>
+Made with Love by Vishal ❤️
+</footer>
+<script>
+const floating=document.getElementById('floating');
+for(let i=0;i<25;i++){
+let heart=document.createElement('div');
+heart.className='heart';
+heart.innerHTML=Math.random()>0.5?'❤️':'✨';
+heart.style.left=Math.random()*100+'%';
+heart.style.animationDuration=(8+Math.random()*8)+'s';
+heart.style.fontSize=(15+Math.random()*20)+'px';
+floating.appendChild(heart);
+}
+function showMessage(type){
+const popup=document.getElementById('popup');
+popup.style.display='block';
+if(type==='sad'){
+popup.innerHTML=
+"You've survived every difficult day you've faced. I'm proud of you, and I believe in you. ❤️";
+}
+if(type==='miss'){
+popup.innerHTML=
+"I’m probably missing you too right now. ❤️";
+}
+if(type==='angry'){
+popup.innerHTML=
+"Okay... maybe I deserve it a little 😅 But I still love you and I still care about us.";
+}
+}
+function hug(){
+document.getElementById('hugMessage').style.display='block';
+}
+</script>
+</body>
+</html>
